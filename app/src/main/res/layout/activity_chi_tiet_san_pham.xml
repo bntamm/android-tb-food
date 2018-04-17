@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_chitietsanpham"
+    tools:context="com.example.tam.tb_food.activity.ChiTietSanPham">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarchitietsanpham"
+        app:titleTextColor="#434386"
+        android:background="#c9c96f"
+        app:title="Chi tiết mặt hàng"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageviewchitietsanpham"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <LinearLayout
+            android:textAlignment="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="14dp"
+                android:id="@+id/textviewtenchitietsanpham"
+                android:text="Tên sản phẩm"
+                android:textStyle="bold"
+                android:textColor="#282323"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/textviewgiachitietsanpham"
+                android:text="Giá sản phẩm"
+                android:textColor="#ca3232"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+
+                android:layout_margin="5dp"
+                android:background="@drawable/spinner"
+                android:textAlignment="center"
+                android:layout_marginTop="6dp"
+                android:id="@+id/spinner"
+                android:layout_width="170dp"
+                android:layout_height="30dp"></Spinner>
+
+
+            <Button
+                android:backgroundTintMode="src_atop"
+                android:backgroundTint="@android:color/widget_edittext_dark"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/custom_button_muahang"
+                android:id="@+id/buttondatmuahang"
+                android:textColor="#0800ff"
+                android:textSize="15sp"
+                android:text="Đặt mua"
+                android:layout_width="170dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textColor="#7700ff"
+            android:textSize="26sp"
+            android:text="Giới thiệu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="chi tiết"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:paddingBottom="10dp"
+                android:id="@+id/textviewmotachitietsanpham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
